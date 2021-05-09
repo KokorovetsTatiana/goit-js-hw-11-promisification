@@ -1,0 +1,34 @@
+{
+  "name": "goit-js-hw-11-promisification",
+  "version": "1.0.0",
+  "description": "Задание 1<br>\r Напиши функцию delay(ms), которая возвращает промис, переходящий в состояние \"resolved\" через ms миллисекунд. Значением исполнившегося промиса должно быть то кол-во миллисекунд, которое передали во время вызова функции delay.<br>\r Задание 2<br>\r Перепиши функцию toggleUserState() так, чтобы она не использовала callback-функцию callback, а принимала всего два параметра allUsers и userName и возвращала промис.<br>\r Задание 3<br>\r Перепиши функцию makeTransaction() так, чтобы она не использовала callback-функции onSuccess и onError, а принимала всего один параметр transaction и возвращала промис.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /goit-js-hw-11-promisification/",
+    "start": "parcel src/index.html -p 3000 --open",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KokorovetsTatiana/goit-js-hw-11-promisification.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KokorovetsTatiana/goit-js-hw-11-promisification/issues"
+  },
+  "homepage": "https://kokorovetstatiana.github.io/goit-js-hw-11-promisification",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
