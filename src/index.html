@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-    <script>
-        var req = new XMLHttpRequest();
-        req.open("GET", "/api/security_check.json", false);
-        req.send();
-        if (req.response == "untrusted user") {
-            // User is not logged in; redirect to a safe page
-            location.href = "/security_check_failed.html";
-        }
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
